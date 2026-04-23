@@ -59,12 +59,15 @@ cd shiba
 chmod +x setup.sh
 python3 -m venv venv
 source venv/bin/activate
+If the .env.exmaple is missed, just create it! It is simply:
+ANTHROPIC_API_KEY=sk-ant-your-key-here
 ./setup.sh
 
 Install the shiba apk. You can find it in the workplace folder.
 You can install it by downloading the apk to the android, and then install it. 
 And..talk to it
 ```
+Installation Video: https://www.youtube.com/watch?v=l3oKHPBFC3g
 
 ### System dependencies for voice mode
 
