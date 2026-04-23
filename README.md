@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="shibachess" src="https://github.com/user-attachments/assets/e2ef3fba-f8cb-4078-8c13-5a52d00382e9" />
+
 # Shiba — Personal AI Assistant
 
 
