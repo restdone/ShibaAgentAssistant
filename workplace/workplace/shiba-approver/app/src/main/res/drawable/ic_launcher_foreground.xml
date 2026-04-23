@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Dark background circle -->
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Cyber grid lines (subtle) -->
+    <path
+        android:strokeColor="#FF6B00"
+        android:strokeWidth="0.3"
+        android:fillColor="#00000000"
+        android:pathData="M0,27 L108,27 M0,54 L108,54 M0,81 L108,81 M27,0 L27,108 M54,0 L54,108 M81,0 L81,108" />
+
+    <!-- Head shape - cute rounded Shiba head -->
+    <path
+        android:fillColor="#E8A020"
+        android:pathData="M54,18 C36,18 24,30 24,46 C24,58 28,66 36,72 L36,80 C36,82 38,84 40,84 L68,84 C70,84 72,82 72,80 L72,72 C80,66 84,58 84,46 C84,30 72,18 54,18 Z" />
+
+    <!-- Ears - left -->
+    <path
+        android:fillColor="#E8A020"
+        android:pathData="M30,40 L24,18 L42,30 Z" />
+    <!-- Ear inner left -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M30,38 L26,22 L39,31 Z" />
+
+    <!-- Ears - right -->
+    <path
+        android:fillColor="#E8A020"
+        android:pathData="M78,40 L84,18 L66,30 Z" />
+    <!-- Ear inner right -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M78,38 L82,22 L69,31 Z" />
+
+    <!-- Face white patch -->
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M54,38 C44,38 38,44 38,52 C38,60 44,68 54,70 C64,68 70,60 70,52 C70,44 64,38 54,38 Z" />
+
+    <!-- Left eye - cyber glow -->
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M44,48 C44,45 46,43 48,43 C50,43 52,45 52,48 C52,51 50,53 48,53 C46,53 44,51 44,48 Z" />
+    <!-- Left eye shine -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M46,46 C46,44.9 46.9,44 48,44 C49.1,44 50,44.9 50,46 C50,47.1 49.1,48 48,48 C46.9,48 46,47.1 46,46 Z" />
+    <!-- Left eye cyber dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M47,45 C47,44.4 47.4,44 48,44 C48.6,44 49,44.4 49,45 C49,45.6 48.6,46 48,46 C47.4,46 47,45.6 47,45 Z" />
+
+    <!-- Right eye - cyber glow -->
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M56,48 C56,45 58,43 60,43 C62,43 64,45 64,48 C64,51 62,53 60,53 C58,53 56,51 56,48 Z" />
+    <!-- Right eye shine -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M58,46 C58,44.9 58.9,44 60,44 C61.1,44 62,44.9 62,46 C62,47.1 61.1,48 60,48 C58.9,48 58,47.1 58,46 Z" />
+    <!-- Right eye cyber dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M59,45 C59,44.4 59.4,44 60,44 C60.6,44 61,44.4 61,45 C61,45.6 60.6,46 60,46 C59.4,46 59,45.6 59,45 Z" />
+
+    <!-- Nose -->
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M51,56 C51,54 52,53 54,53 C56,53 57,54 57,56 C57,57.5 56,58 54,58 C52,58 51,57.5 51,56 Z" />
+
+    <!-- Mouth - cute smile -->
+    <path
+        android:strokeColor="#1E1E1E"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:pathData="M50,59 C51,62 53,63 54,63 C55,63 57,62 58,59" />
+
+    <!-- Cheek blush left -->
+    <path
+        android:fillColor="#FFCCAA"
+        android:fillAlpha="0.5"
+        android:pathData="M38,56 C38,53 40,51 43,51 C46,51 48,53 48,56 C48,59 46,61 43,61 C40,61 38,59 38,56 Z" />
+
+    <!-- Cheek blush right -->
+    <path
+        android:fillColor="#FFCCAA"
+        android:fillAlpha="0.5"
+        android:pathData="M60,56 C60,53 62,51 65,51 C68,51 70,53 70,56 C70,59 68,61 65,61 C62,61 60,59 60,56 Z" />
+
+    <!-- Cyber accent lines on forehead -->
+    <path
+        android:strokeColor="#FF6B00"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:pathData="M46,34 L44,28 M54,32 L54,26 M62,34 L64,28" />
+
+    <!-- Bottom body / collar -->
+    <path
+        android:fillColor="#1E1E1E"
+        android:pathData="M36,80 L72,80 L72,88 C72,90 70,92 68,92 L40,92 C38,92 36,90 36,88 Z" />
+
+    <!-- Cyber collar accent -->
+    <path
+        android:strokeColor="#FF6B00"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M36,83 L72,83" />
+
+    <!-- Collar tag -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M51,83 L57,83 L57,90 C57,91 56,92 54,92 C52,92 51,91 51,90 Z" />
+
+</vector>

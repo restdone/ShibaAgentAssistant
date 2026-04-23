@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Shiba Browser Agent",
+  "version": "1.0",
+  "description": "Allows Shiba AI to control and read the browser via a local WebSocket server.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "<all_urls>",
+    "http://localhost/*",
+    "ws://localhost/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Shiba Browser Agent"
+  }
+}
