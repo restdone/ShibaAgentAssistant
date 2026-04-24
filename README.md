@@ -1,6 +1,6 @@
 <img width="500" height="500" alt="shibachess" src="https://github.com/user-attachments/assets/e2ef3fba-f8cb-4078-8c13-5a52d00382e9" />
 
-# Shiba — Personal AI Assistant
+# Shiba — Personal AI Semi-Auto Voice Assistant
 
 
 Shiba is a locally-running personal AI assistant for Linux. It runs in your terminal, has long-term memory via an Obsidian vault, short-term semantic memory via ChromaDB, and supports both text and voice interaction. An Android companion app lets you approve or reject file writes and shell commands from your phone over local WiFi.
