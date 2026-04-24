@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Manager — {current_path}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/dracula.min.css">
+<style>{style_css}</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>&#128193; File Manager</h1>
+  <nav class="breadcrumb">
+    <a href="/browse/">Root</a>
+    {breadcrumbs}
+  </nav>
+</div>
+
+<div class="toolbar">
+  <button class="btn btn-success" onclick="openNewFolder()">+ Folder</button>
+  <button class="btn btn-primary" onclick="openNewFile()">+ File</button>
+  <label class="btn btn-warn" style="cursor:pointer;">
+    &#8679; Upload
+    <input type="file" multiple onchange="uploadFiles(this.files)" style="display:none">
+  </label>
+</div>
+
+<div class="container">
+  {flash}
+
+  <div class="upload-zone" id="dropzone" onclick="document.getElementById('dropInput').click()">
+    Drop files here or click to upload
+    <input type="file" id="dropInput" multiple onchange="uploadFiles(this.files)">
+  </div>
+
+  <table>
+    <thead><tr>
+      <th>Name</th>
+      <th class="type-col">Type</th>
+      <th class="size-col">Size</th>
+      <th class="modified-col">Modified</th>
+      <th>Actions</th>
+    </tr></thead>
+    <tbody>
+      {parent_row}
+      {rows}
+    </tbody>
+  </table>
+</div>
+
+<!-- Editor Modal -->
+<div class="modal-overlay" id="editorModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="editorTitle">Edit File</h2>
+      <button class="btn btn-danger btn-sm" onclick="closeEditor()">&#10005; Close</button>
+    </div>
+    <div class="modal-body">
+      <textarea id="editorArea"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="saveFile()">&#128190; Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Prompt Modal -->
+<div class="modal-overlay" id="promptModal">
+  <div class="prompt-modal">
+    <h2 id="promptTitle">Enter name</h2>
+    <input type="text" id="promptInput" onkeydown="if(event.key==='Enter')promptOk()">
+    <div class="row">
+      <button class="btn btn-danger btn-sm" onclick="closePrompt()">Cancel</button>
+      <button class="btn btn-primary btn-sm" onclick="promptOk()">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Action Bottom Sheet -->
+<div class="sheet-overlay" id="sheetOverlay">
+  <div class="sheet">
+    <div class="sheet-title" id="sheetTitle"></div>
+    <div class="sheet-actions" id="sheetActions"></div>
+    <button class="sheet-cancel" onclick="closeSheet()">Cancel</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/shell/shell.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/markdown/markdown.min.js"></script>
+<script>
+{script_js}
+</script>
+</body>
+</html>

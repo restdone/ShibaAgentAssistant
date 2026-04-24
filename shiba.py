@@ -73,10 +73,11 @@ def main() -> None:
         )
         sys.exit(1)
 
-    # ── Start file server in the background ──────────────────────────────────
-    _file_server_dir = Path(__file__).parent
+    # ── Start file server (new package) in the background ────────────────────
+    _shiba_dir = Path(__file__).parent
     _file_server_proc = subprocess.Popen(
-        [sys.executable, str(_file_server_dir / "file_server.py")],
+        [sys.executable, "-m", "file_server"],
+        cwd=str(_shiba_dir),
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
